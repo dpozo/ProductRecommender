@@ -1,0 +1,174 @@
+﻿@model Sistema.Models.Persona
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h2>Edit</h2>
+
+<h4>Persona</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="ID" />
+            <div class="form-group">
+                <label asp-for="sexo" class="control-label"></label>
+                <input asp-for="sexo" class="form-control" />
+                <span asp-validation-for="sexo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="age" class="control-label"></label>
+                <input asp-for="age" class="form-control" />
+                <span asp-validation-for="age" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="antiguedad" class="control-label"></label>
+                <input asp-for="antiguedad" class="form-control" />
+                <span asp-validation-for="antiguedad" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="segmento" class="control-label"></label>
+                <input asp-for="segmento" class="form-control" />
+                <span asp-validation-for="segmento" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="renta" class="control-label"></label>
+                <input asp-for="renta" class="form-control" />
+                <span asp-validation-for="renta" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ind_ahor_fin_ult1" class="control-label"></label>
+                <input asp-for="ind_ahor_fin_ult1" class="form-control" />
+                <span asp-validation-for="ind_ahor_fin_ult1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ind_aval_fin_ult1" class="control-label"></label>
+                <input asp-for="ind_aval_fin_ult1" class="form-control" />
+                <span asp-validation-for="ind_aval_fin_ult1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ind_cco_fin_ult1" class="control-label"></label>
+                <input asp-for="ind_cco_fin_ult1" class="form-control" />
+                <span asp-validation-for="ind_cco_fin_ult1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ind_cder_fin_ult1" class="control-label"></label>
+                <input asp-for="ind_cder_fin_ult1" class="form-control" />
+                <span asp-validation-for="ind_cder_fin_ult1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ind_cno_fin_ult1" class="control-label"></label>
+                <input asp-for="ind_cno_fin_ult1" class="form-control" />
+                <span asp-validation-for="ind_cno_fin_ult1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ind_ctju_fin_ult1" class="control-label"></label>
+                <input asp-for="ind_ctju_fin_ult1" class="form-control" />
+                <span asp-validation-for="ind_ctju_fin_ult1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ind_ctma_fin_ult1" class="control-label"></label>
+                <input asp-for="ind_ctma_fin_ult1" class="form-control" />
+                <span asp-validation-for="ind_ctma_fin_ult1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ind_ctop_fin_ult1" class="control-label"></label>
+                <input asp-for="ind_ctop_fin_ult1" class="form-control" />
+                <span asp-validation-for="ind_ctop_fin_ult1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ind_ctpp_fin_ult1" class="control-label"></label>
+                <input asp-for="ind_ctpp_fin_ult1" class="form-control" />
+                <span asp-validation-for="ind_ctpp_fin_ult1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ind_deco_fin_ult1" class="control-label"></label>
+                <input asp-for="ind_deco_fin_ult1" class="form-control" />
+                <span asp-validation-for="ind_deco_fin_ult1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ind_deme_fin_ult1" class="control-label"></label>
+                <input asp-for="ind_deme_fin_ult1" class="form-control" />
+                <span asp-validation-for="ind_deme_fin_ult1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ind_dela_fin_ult1" class="control-label"></label>
+                <input asp-for="ind_dela_fin_ult1" class="form-control" />
+                <span asp-validation-for="ind_dela_fin_ult1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ind_ecue_fin_ult1" class="control-label"></label>
+                <input asp-for="ind_ecue_fin_ult1" class="form-control" />
+                <span asp-validation-for="ind_ecue_fin_ult1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ind_fond_fin_ult1" class="control-label"></label>
+                <input asp-for="ind_fond_fin_ult1" class="form-control" />
+                <span asp-validation-for="ind_fond_fin_ult1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ind_hip_fin_ult1" class="control-label"></label>
+                <input asp-for="ind_hip_fin_ult1" class="form-control" />
+                <span asp-validation-for="ind_hip_fin_ult1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ind_plan_fin_ult1" class="control-label"></label>
+                <input asp-for="ind_plan_fin_ult1" class="form-control" />
+                <span asp-validation-for="ind_plan_fin_ult1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ind_pres_fin_ult1" class="control-label"></label>
+                <input asp-for="ind_pres_fin_ult1" class="form-control" />
+                <span asp-validation-for="ind_pres_fin_ult1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ind_reca_fin_ult1" class="control-label"></label>
+                <input asp-for="ind_reca_fin_ult1" class="form-control" />
+                <span asp-validation-for="ind_reca_fin_ult1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ind_tjcr_fin_ult1" class="control-label"></label>
+                <input asp-for="ind_tjcr_fin_ult1" class="form-control" />
+                <span asp-validation-for="ind_tjcr_fin_ult1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ind_valo_fin_ult1" class="control-label"></label>
+                <input asp-for="ind_valo_fin_ult1" class="form-control" />
+                <span asp-validation-for="ind_valo_fin_ult1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ind_viv_fin_ult1" class="control-label"></label>
+                <input asp-for="ind_viv_fin_ult1" class="form-control" />
+                <span asp-validation-for="ind_viv_fin_ult1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ind_nomina_ult1" class="control-label"></label>
+                <input asp-for="ind_nomina_ult1" class="form-control" />
+                <span asp-validation-for="ind_nomina_ult1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ind_nom_pens_ult1" class="control-label"></label>
+                <input asp-for="ind_nom_pens_ult1" class="form-control" />
+                <span asp-validation-for="ind_nom_pens_ult1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ind_recibo_ult1" class="control-label"></label>
+                <input asp-for="ind_recibo_ult1" class="form-control" />
+                <span asp-validation-for="ind_recibo_ult1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

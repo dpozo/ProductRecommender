@@ -1,0 +1,203 @@
+﻿@model IEnumerable<Sistema.Models.Persona>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.sexo)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.age)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.antiguedad)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.segmento)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.renta)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ind_ahor_fin_ult1)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ind_aval_fin_ult1)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ind_cco_fin_ult1)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ind_cder_fin_ult1)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ind_cno_fin_ult1)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ind_ctju_fin_ult1)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ind_ctma_fin_ult1)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ind_ctop_fin_ult1)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ind_ctpp_fin_ult1)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ind_deco_fin_ult1)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ind_deme_fin_ult1)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ind_dela_fin_ult1)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ind_ecue_fin_ult1)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ind_fond_fin_ult1)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ind_hip_fin_ult1)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ind_plan_fin_ult1)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ind_pres_fin_ult1)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ind_reca_fin_ult1)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ind_tjcr_fin_ult1)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ind_valo_fin_ult1)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ind_viv_fin_ult1)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ind_nomina_ult1)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ind_nom_pens_ult1)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ind_recibo_ult1)
+                </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.sexo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.age)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.antiguedad)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.segmento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.renta)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ind_ahor_fin_ult1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ind_aval_fin_ult1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ind_cco_fin_ult1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ind_cder_fin_ult1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ind_cno_fin_ult1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ind_ctju_fin_ult1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ind_ctma_fin_ult1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ind_ctop_fin_ult1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ind_ctpp_fin_ult1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ind_deco_fin_ult1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ind_deme_fin_ult1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ind_dela_fin_ult1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ind_ecue_fin_ult1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ind_fond_fin_ult1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ind_hip_fin_ult1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ind_plan_fin_ult1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ind_pres_fin_ult1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ind_reca_fin_ult1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ind_tjcr_fin_ult1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ind_valo_fin_ult1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ind_viv_fin_ult1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ind_nomina_ult1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ind_nom_pens_ult1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ind_recibo_ult1)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
